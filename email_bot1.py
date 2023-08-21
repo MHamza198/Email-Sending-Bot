@@ -1,13 +1,20 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+import pandas as pd
 
 # Gmail account details
-sender_email = 'muhammadhamza198198@gmail.com'
-sender_password = 'Put your Own Code here'
+sender_email = 'muhammadhamza198198@gmail.com'  # Replace with your Gmail email
+sender_password = 'wjwlgfcucorbkfjg'      # Replace with your Gmail password
 
-# Recipient list
-recipient_list = ['hamzashahzad198@gmail.com', 'muhammadhamza198198198@gmail.com']
+# Load recipient email addresses from Excel file
+def load_recipients_from_excel(filename):
+    try:
+        df = pd.read_excel(filename)
+        return df['Email'].tolist()
+    except Exception as e:
+        print(f"Error loading recipients from Excel: {e}")
+        return []
 
 # Email content
 subject = 'Your Subject'
@@ -29,6 +36,10 @@ def send_email(subject, message, recipient):
         print(f"Email sent to {recipient}")
     except Exception as e:
         print(f"Error sending email to {recipient}: {e}")
+
+# Load recipient emails from Excel file
+recipient_file = 'recipient_list.xlsx'  # Replace with your Excel file name
+recipient_list = load_recipients_from_excel(recipient_file)
 
 # Sending emails to recipients
 for recipient in recipient_list:
