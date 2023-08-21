@@ -1,0 +1,17 @@
+My name is: Muhammad Hamza
+
+Requirements for using this script:
+
+Gmail Account: You need a Gmail account to send emails from. 
+Replace 'your_email@gmail.com' with your Gmail email and 'your_password' with your Gmail password. 
+Note that storing your password directly in the script is not secure. 
+Consider using more secure methods like environment variables or external configuration files for storing sensitive information.
+
+Recipient List: Create a list of recipient email addresses and replace 'recipient1@example.com', 'recipient2@example.com', etc. 
+with the actual email addresses you want to send emails to.
+
+Email Content: Modify the subject and message variables to set the subject and content of your email.
+
+Please keep in mind that sending bulk emails responsibly is important to avoid being marked as spam. 
+Ensure you have explicit consent from the recipients, offer an easy way to opt-out, and follow best practices for sending emails. 
+Additionally, using your Gmail password directly in the script is not recommended for security reasons. Explore safer ways to handle credentials.
