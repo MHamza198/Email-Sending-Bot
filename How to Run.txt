@@ -1,0 +1,24 @@
+To run the Python script to send bulk emails, you'll need to follow these steps:
+
+1. Install Python:
+If you don't have Python installed on your computer, you'll need to download and install it from the official Python website: https://www.python.org/downloads/
+
+2. Install Required Libraries:
+Open a command prompt or terminal window and navigate to the directory where you've saved the script. Run the following command to install the required libraries:
+
+(pip install smtplib) 
+
+3. Update Script:
+Edit the script to replace 'your_email@gmail.com' and 'your_password' with your actual Gmail email and password. Also, add the recipient email addresses to the recipient_list.
+
+4. Run the Script:
+Open a command prompt or terminal window and navigate to the directory where you've saved the script. Run the script using the following command:
+
+(python script_name.py)
+
+Replace script_name.py with the actual name of your Python script file.
+
+5. Permission for Less Secure Apps:
+If you encounter login issues, you might need to allow "2 step Authentication" in your Google account settings or generate an "App Password" for this script. You can do this by going to your Google Account settings and navigating to the "Security" section.
+
+Please note that this script sends emails using your Gmail account, and using your Gmail password directly in the script is not secure. It's recommended to use more secure methods to handle credentials, such as using environment variables or external configuration files.
