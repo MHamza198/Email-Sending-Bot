@@ -4,7 +4,7 @@ from email.mime.multipart import MIMEMultipart
 
 # Gmail account details
 sender_email = 'muhammadhamza198198@gmail.com'
-sender_password = 'wjwlgfcucorbkfjg'
+sender_password = 'Put your Own Code here'
 
 # Recipient list
 recipient_list = ['hamzashahzad198@gmail.com', 'muhammadhamza198198198@gmail.com']
